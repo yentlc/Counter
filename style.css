@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-areas: "title" "counter" "buttons";
+    font-family:"Quicksand";
+}
+.title{
+    grid-area: title;
+    font-size: 2em;
+    margin-top: 60px;
+}
+#value{
+    grid-area: counter;
+    font-size:8em;
+    font-weight: 500;
+    align-self: center;
+}
+.buttons{
+    grid-area: buttons;
+}
